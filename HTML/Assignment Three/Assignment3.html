@@ -1,81 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        div{
-            background-color: blue;
-        }
+      div {
+        background-color: blue;
+      }
 
-        .heading {
-            color: red;
-        }
-        .blue-button {
-            background-color: blue;
-        }
-        .heading-centered {
-            text-align: center;
-            text-transform: uppercase;
-        }
-        .outer-div {
-            font-size: 25px;
-            background-color: white;
-        }
-        .inner-div {
-            font-size: 10px;
-            background-color: white;
-        }
-        .new-div {
-            height: 100px;
-            width: 100px;
-            background-color: green;
-            border-radius: 50%;
-        }
+      .heading {
+        color: red;
+      }
+      .blue-button {
+        background-color: blue;
+      }
+      .heading-centered {
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .outer-div {
+        font-size: 25px;
+        background-color: white;
+      }
+      .inner-div {
+        font-size: 10px;
+        background-color: white;
+      }
+      .new-div {
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        border-radius: 50%;
+      }
+      ul {
+        display: flex;
+        height: 50px;
+      }
+      li {
+        width: 15%;
+        margin: 15px;
+      }
+      input {
+        width: 110px;
+      }
+      .search {
+        width: 20%;
+      }
     </style>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!--Practice Set 1-->
     <!--Q1-->
     <div>Hello World!</div>
-    <hr>
+    <hr />
     <!--Q2-->
     <h1 class="heading">Heading</h1>
     <h2 class="heading">Heading</h2>
     <h3 class="heading">Heading</h3>
-    <hr>
+    <hr />
     <!--Q3-->
     <!--Using Stylesheets-->
     <button class="green-button">Green Button</button>
-    <br><br>
+    <br /><br />
     <!--Using <style> tag-->
     <button class="blue-button">Blue Button</button>
-    <br><br>
+    <br /><br />
     <!--Using Inline Style-->
-    <button style="background-color: pink;">Pink Button</button>
-    <hr>
+    <button style="background-color: pink">Pink Button</button>
+    <hr />
     <!--Practise Set 2-->
     <!--Q1-->
     <h1 class="heading-centered">This is the Heading</h1>
-    <hr>
+    <hr />
     <!--Q2-->
     <a href="/hello.html">go to hello</a>
-    <hr>
+    <hr />
     <!--Q3-->
     <div class="outer-div">
-        This is outer div text size of 25px
-        <br><br>
-        <div class="inner-div">
-            This is inner div text size of 10px
-        </div> 
+      This is outer div text size of 25px
+      <br /><br />
+      <div class="inner-div">This is inner div text size of 10px</div>
     </div>
-    <hr>
+    <hr />
     <!--Practise Set 3-->
     <!--Q1-->
     <div class="new-div">This is new div</div>
     <!--Q2-->
-    
-</body>
+    <div
+      class="navbar"
+      style="background-color: black; border-radius: 5px"
+    >
+      <ul>
+        <li>
+          <a style="color:white">amazon.in</a>
+        </li>
+        <li>
+          <a style="color:white">Account</a>
+        </li>
+        <li>
+          <a style="color:white">My Cart</a>
+        </li>
+        <li>
+          <a style="color:white">Contact us</a>
+        </li>
+        <li class="search">
+          <input type="text" placeholder="search Amazon.in" />
+          <button type="button">Search</button>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
